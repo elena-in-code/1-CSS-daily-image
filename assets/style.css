@@ -26,11 +26,11 @@ body {
   border-radius: 80px 80px 60px 60px;
   border: 4px solid black;
   top:85px;
-  left:130px;
+  left:128px;
 }
 /*nose*/
 .face{
-  z-index:3;
+  z-index: 3;
   width: 12px;
   height: 6px;
   background-color: black;
@@ -62,7 +62,6 @@ body {
 	left: 154px;
 	transform: rotate(20deg);
 	background-color: black;
-	/*box-shadow: 0 0 0 1px black, 54px 0 0 black, 54px 0 0 1px black;*/
 	border-radius: 100% 100% 88% 88% /100% 100% 88% 88%;
  }
  /*eye balls*/
@@ -73,11 +72,22 @@ body {
   background-color:white;
   box-shadow: 0 0 0 1px black, 54px 0 0 white, 54px 0 0 1px black;
   border-radius:100%;
-  top: 5px;
-  left: 12px;
+  top: 125px;
+  left: 164px;
+}
+/*eye shine*/
+.eye-balls::after{
+  z-index: 5;
+  width:3px;
+  height:3px;
+  background-color:white;
+  box-shadow: 0 0 0 1px white, 54px 0 0 white, 54px 0 0 1px white;
+  border-radius:100%;
+  top: 10px;
+  left: 10px;
 }
 .body{
-  z-index:1;
+  z-index: 1;
   width: 90px;
   height: 80px;
   background-color: white;
@@ -96,7 +106,7 @@ body {
   background-color: black;
   border-radius: 100%;
   top:90px;
-  left:236px;
+  left:228px;
 }
 	/*left ear*/
 .ears::after{
@@ -105,7 +115,7 @@ body {
   background-color: black;
   border-radius: 100%;
   top:90px;
-  left:110px;
+  left:117px;
   }
  /*beginning of paws*/
  	/*Bottom paws*/
