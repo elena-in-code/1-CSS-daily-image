@@ -21,62 +21,75 @@ body {
 .head{
   z-index:2;
   width:130px;
-  height:100px;
+  height:95px;
   background-color: white;				
-  border-radius: 100%;
+  border-radius: 80px 80px 60px 60px;
   border: 4px solid black;
-  top:90px;
+  top:85px;
   left:130px;
 }
 /*nose*/
 .face{
   z-index:3;
-  width: 15px;
-  height: 8px;
+  width: 12px;
+  height: 6px;
   background-color: black;
   border-radius:100%;
-  top:150px;
+  top:154px;
   left: 190px;
  }
  /*black part around eyes*/
- .eyes {
+ 	 /*Left black part of eye*/
+ .eyes::before{
 	z-index: 4;
 	display:block;
-	width: 34px;
-	height: 38px;
+	width: 30px;
+	height: 40px;
+	top: 115px;
+	left: 210px;
+	transform: rotate(-20deg);
+	background-color: black;
+	/*box-shadow: 0 0 0 1px black, 54px 0 0 black, 54px 0 0 1px black;*/
+	border-radius: 100% 100% 88% 88% /100% 100% 88% 88%;
+ }
+	 /*Right black part of eye*/
+ .eyes::after{
+	z-index: 4;
+	display:block;
+	width: 30px;
+	height: 40px;
 	top: 115px;
 	left: 154px;
+	transform: rotate(20deg);
 	background-color: black;
-	box-shadow: 0 0 0 1px black, 54px 0 0 black, 54px 0 0 1px black;
-	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	/*box-shadow: 0 0 0 1px black, 54px 0 0 black, 54px 0 0 1px black;*/
+	border-radius: 100% 100% 88% 88% /100% 100% 88% 88%;
  }
- /*eyes*/
- .eyes::before{
+ /*eye balls*/
+ .eye-balls{
+  z-index: 5;
   width:10px;
   height:10px;
   background-color:white;
   box-shadow: 0 0 0 1px black, 54px 0 0 white, 54px 0 0 1px black;
   border-radius:100%;
-  top: 18px;
+  top: 5px;
   left: 12px;
 }
 .body{
   z-index:1;
-  width: 100px;
-  height: 90px;
+  width: 90px;
+  height: 80px;
   background-color: white;
-  border-radius: 0 0 100px 100px;
+  	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 30%;
+	border-bottom-left-radius: 30%;
   border: 4px solid black;
-  top:170px;
+  top:168px;
   left:148px;
 }
-/*.body::before{
-  width:80px;
-  height:70px;
-  background-color:#ffebcc;
-  border-radius:0 0 80px 80px;
-  left:10px;
-}*/
+	/*right ear*/
 .ears::before{
   width:50px;
   height:50px;
@@ -85,6 +98,7 @@ body {
   top:90px;
   left:236px;
 }
+	/*left ear*/
 .ears::after{
   width:50px;
   height:50px;
@@ -93,6 +107,8 @@ body {
   top:90px;
   left:110px;
   }
+ /*beginning of paws*/
+ 	/*Bottom paws*/
 .paws{
   width:26px;
   height:66px;
@@ -100,26 +116,28 @@ body {
   border-radius:0 0 80px 80px;
   box-shadow: 50px 0 0 black;
   top:210px;
-  left:164px;
+  left:158px;
 }
+	/*Top Left paw*/
 .paws::before {
   z-index: 2;
   width: 30px;
   height:34px;
   background-color: black;
   border-radius:80px 0px 80px 80px;
-  left:-13px;
+  left:-8px;
   top:-19px;
   transform: rotate(-80deg);
 }
+	/*Top Right paw*/
 .paws::after {
   z-index: 2;
   width: 30px;
   height:34px;
   background-color: black;
   border-radius:0px 80px 80px 80px;
-  left:60px;
+  left:55px;
   top:-19px;
   transform: rotate(80deg);
 }
-
+ /*End of paws*/
